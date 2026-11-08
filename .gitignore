@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+work/
+work14/
+work15/
+cache/
+output/
+data/
+kaggle.json
+.ipynb_checkpoints/

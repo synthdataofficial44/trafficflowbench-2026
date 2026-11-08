@@ -1,0 +1,10 @@
+# Versions recorded by the run that built the selected submission (docs/manifest_v22.json, Colab, Python 3.13).
+numpy==2.1.3
+pandas==2.2.3
+pyarrow==23.0.1
+lightgbm==4.6.0
+scipy==1.16.3
+# optional: the CatBoost candidates of Task 1 (evaluated on a GPU in v22, rejected; not part of the final answer)
+# catboost==1.2.10
+# optional: data download
+kaggle
