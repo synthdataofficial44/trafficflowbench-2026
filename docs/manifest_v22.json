@@ -1,0 +1,271 @@
+{
+ "version": "v22",
+ "built": "2026-10-25 17:50",
+ "picks": {
+  "stage": "B",
+  "files": [
+   "submission_20261025_1742_v15b_main.zip",
+   "submission_20261025_1742_v15b_hedge.zip"
+  ]
+ },
+ "files": {
+  "main": {
+   "zip": "submission_20261025_1742_v15b_main.zip",
+   "csv_md5": "6d196f7870a9e58d13edb4c183cef020",
+   "components": {
+    "task1_v15.parquet": "c0327df4e41373dd733c70ae64cb6de9",
+    "task2_v15_0.csv": "9be1bef82420ac144af4020832e3420b",
+    "task4.csv": "d514ac203fa8489c6d4956dd77ec0e20"
+   }
+  },
+  "hedge": {
+   "zip": "submission_20261025_1742_v15b_hedge.zip",
+   "csv_md5": "d2891a4d2e370dfe2fef3ecda0a0e8d5",
+   "components": {
+    "task1_v15.parquet": "c0327df4e41373dd733c70ae64cb6de9",
+    "task2_v15_0_hedge.csv": "6899d00477bd79289fea8c2537db9baf",
+    "task4.csv": "d514ac203fa8489c6d4956dd77ec0e20"
+   }
+  }
+ },
+ "code_sha256": {
+  "__init__.py": "f156e6e5caadd1c9d35b2afe234fb163da73bc7dd15b94385ad491fdcc00273c",
+  "asof.py": "c6f4e634504897e80c389a50eaa48eaa62d3cceebe4dde2e242db6c88286eea9",
+  "common.py": "f36f0e7db90c5d8ed6a1f7209d83c6a043e1ee0e5a9147feb2ed7497cc2e2632",
+  "data.py": "8b2c67f5e2de72e84e71813cc02e7e34059c44ebddddb1d499e6935beaf25f85",
+  "diag12.py": "7598f3325ea5faa97f47c0c801ebc195d8edd391954417f6d01df09615f25862",
+  "gpu.py": "f8a01943ccb5c4b3e97766207d218a19fc2e891a2b9cf75c396858ed604c0f84",
+  "physics.py": "9d3540b07ed4cbf1a45b396572365617af52340dbd1d6ac1762a8a262610c822",
+  "probe.py": "41415bb4a2f52b19d0cee25de34c6905d06bcc3f0506f1d10291e398916b193a",
+  "research13.py": "6381a79e48dd6dee9c8af870868c70bbeda98b92f3f6c7036c5c0251232ebbb3",
+  "submit.py": "5f87f280a27d5eaa6f8a627cd64254604fa4ab087368601bd2707793beba0a7e",
+  "t1lab.py": "9b5df3d52191f3479237820c6ef755ee5efdd61c89dce6cde68354f1f9ee6efa",
+  "t1lab11.py": "1efa8e40f176df1cded2e97184a7cac81377ece2ad9a210c39948c9e0b40cde4",
+  "t1pre13.py": "f030d411d37d8d5828152c155895e6fddcfed252d6c834c6968ef6963c990ce8",
+  "t1v14.py": "83f181bb2594858647dbed73d69d4be7bd70acd51373dfef4ef0935656caf434",
+  "t1v15.py": "4410427ddcaf9241f8df6aecc36be1a374de656b94f9c19e4af57ed354fb5531",
+  "task1.py": "ddae0ee1714cf069ff70665489c59988e954097e70ed9b9921e2961be1b0b07b",
+  "task2.py": "dbc30502881a3a1bd2975164e176f92b687615e30295472aacf713586c3c982c",
+  "task2m.py": "711659119b2ba79bf0cdcf9079f8bac52c584ce637081ed297b3cfc0333dc455",
+  "task2o.py": "0c02510fdcb626fdb3e7f16ec5dc30dac7a1a586c1a92510f74582cfcd02443f",
+  "task2v15.py": "3416378325bea76860721bab6b4e41a6e07bab63cba8fdea524463cd30b18d82",
+  "task2x.py": "57026686fb2e7765f59231b8d37da51f507c1e113ffa421434a690fa339ca11f",
+  "task2y.py": "8310160c21695ab47cbc72cca192964c4774843ae5c9b35e27a6436a1059a82d",
+  "task2z.py": "6435c707f6f20d47fdd4a5702679f5fcbbc9cc3bc09f190e6969418519dd161d",
+  "task4.py": "afe33673803e56f84a96b4e82b2da50125610d3ddf80ee106bc0cad68b6cfcaf"
+ },
+ "packages": {
+  "python": "3.13.16",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "pyarrow": "23.0.1",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10",
+  "scipy": "1.16.3",
+  "sklearn": "1.6.1",
+  "torch": "2.11.0+cu130"
+ },
+ "settings": {
+  "T1": {
+   "rows_tag": "r1",
+   "seeds": [
+    0
+   ],
+   "extra_seeds": [
+    1,
+    2
+   ],
+   "rows_per_seed": true,
+   "n_reg": 250000,
+   "n_dark": 120000,
+   "n_pseudo": 150000,
+   "n_pseudo_dark": 50000,
+   "pseudo_frac": 0.05,
+   "max_rounds": 2500,
+   "full_refit": false,
+   "row_jobs": 3,
+   "seed_cfg": {
+    "2": {
+     "n_pseudo": 300000,
+     "n_pseudo_dark": 100000,
+     "pseudo_dark_n": 80,
+     "lgb_extra": {
+      "deterministic": true,
+      "force_row_wise": true
+     }
+    }
+   },
+   "tm_holdout": true,
+   "tm_n": 20000,
+   "tm_z": 2.0,
+   "hold_tol": 0.0002,
+   "cb": true,
+   "cb_gpu": "auto",
+   "cb_cpu": false,
+   "cb_weights": [
+    0.25,
+    0.4
+   ]
+  },
+  "T2": {
+   "seed": 0,
+   "onset_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "ongoing_seeds": [
+    0,
+    1,
+    2
+   ],
+   "onset_rounds": 500,
+   "ongoing_rounds": 700,
+   "max_ongoing_cand": 1500,
+   "use_T": true,
+   "pseudo": true,
+   "pseudo_og_every": 6,
+   "pseudo_og_per_day": 12,
+   "april_adapt": true,
+   "adapt_alpha": 2.0,
+   "adapt_frac": 0.5,
+   "adapt_z": 1.5,
+   "adapt_min_windows": 40,
+   "late_adapt": true,
+   "late_blocks": [
+    6
+   ],
+   "late_conds": [
+    "queue_onset",
+    "queue_ongoing"
+   ],
+   "late_alpha": 2.0,
+   "late_z": 1.5,
+   "late_min_windows": 30,
+   "late_seeds": [
+    0
+   ],
+   "late_early": {
+    "queue_ongoing": [
+     1,
+     2
+    ]
+   },
+   "candidates": {
+    "queue_onset": [
+     [
+      "v2+pm",
+      [
+       "all",
+       "noloc"
+      ]
+     ]
+    ],
+    "queue_ongoing": [
+     [
+      "v2+m",
+      [
+       "all",
+       "noloc"
+      ]
+     ],
+     [
+      "v2+pm",
+      [
+       "all",
+       "noloc"
+      ]
+     ]
+    ]
+   },
+   "choose": true,
+   "exp_rounds_ongoing": 300,
+   "exp_cv_ongoing": false,
+   "locfree": true,
+   "ead": true,
+   "ead_gate": true,
+   "ead_rho": null,
+   "ead_n": 3000,
+   "ead_M": 0,
+   "ead_z": 2.0,
+   "ead_zm": 2.0
+  },
+  "T2_15": {
+   "og_w": 0.75,
+   "on_w": 1.0,
+   "z15": 2.0,
+   "min_windows15": 40,
+   "fam_share15": 0.75,
+   "reload_tol": 0.02,
+   "main_check": true,
+   "onset_step": true,
+   "probe": true,
+   "march_compliant": true,
+   "force15": null
+  },
+  "T1_15": {
+   "new_seeds": [
+    4
+   ],
+   "cb": "auto",
+   "cb_weights": [
+    0.25,
+    0.4
+   ],
+   "tm_z": 2.0,
+   "hold_tol": 0.0002,
+   "pp_top": 4,
+   "final_tol_J": 0.0,
+   "final_tol_tm": 0.0001,
+   "force_blend": null,
+   "need_next": true
+  },
+  "model_dir": "/content/drive/MyDrive/tfb_work/t2_models"
+ },
+ "inventory": {
+  "t2_models": {
+   "files": 676,
+   "bytes": 1730366457
+  },
+  "t1": {
+   "files": 153,
+   "bytes": 9232617005
+  },
+  "t1lab": {
+   "files": 29,
+   "bytes": 119325920
+  },
+  "pred": {
+   "files": 48,
+   "bytes": 926224307
+  }
+ },
+ "prob_pickles_md5": {
+  "task2_v12_probs.pkl": "fd416c96e7596a6b7fa71fff936a849d",
+  "task2_v131_probs.pkl": "c297756dce47eff236c00da1da901718",
+  "task2_v13_probs.pkl": "ead3af32516e70f84adca62969105338",
+  "task2_v15_probs.pkl": "3a06ec0c0b2392827dc3b31dd69d1f19"
+ },
+ "extra": {
+  "/content/drive/MyDrive/tfb_work/sub/submission_20261025_1742_v15b_main.zip": "a56caa1b855a1f63a2e0ab584e586a81",
+  "/content/drive/MyDrive/tfb_work/sub/submission_20261025_1742_v15b_hedge.zip": "c0a66792d8583dec9d335883ec1efa17"
+ },
+ "provenance": {
+  "std (March rows, hedge April rows)": "train split only (selector-replica windows, train labels)",
+  "adapt (main April rows)": "train + every March window (pseudo windows from the March masked view); every March row is stamped before every April origin",
+  "late:private:main:1:6 (10 April ongoing windows from 6 April)": "train + March + April pseudo windows of the days before 6 April (labels read up to the block start)",
+  "gate / selection (cross-draw rule, nl75, v15 gates)": "March pseudo windows - they shape April rows only",
+  "March rows": "std models and v12 decisions only (v15 put the March onset rows back): no March data after an origin feeds a March row",
+  "decoder": "top-m expected-IoU surrogate of the window's own probabilities (no fitted threshold)"
+ },
+ "rules": {
+  "task2": "for a window with origin T only released rows stamped <= T feed its inputs, fitting and selection (discussions 742068, 748789, 749601)",
+  "april_labels": "never used",
+  "march_for_april": "allowed (all of March precedes April)"
+ }
+}

@@ -1,0 +1,47 @@
+file,description,private,public,kind
+submission_20261025_1742_v15b_hedge.zip,"tfb v15b hedge: T1 v15 (new_x2) | T2 v15 fallback hedge | T4 L2-proj",0.87576,0.87514,hedge
+submission_20261025_1742_v15b_main.zip,"tfb v15b main: T1 v15 (new_x2) | T2 v15 fallback main | T4 L2-proj",0.88253,0.87514,main
+submission_20261020_2242_v15_hedge0.zip,"tfb v15 fallback hedge: T1 v14 new_x2 | T2 v13.1 hedge April rows, March = v12 | T4 L2-proj",0.87557,0.87492,hedge
+submission_v18_queue_5813ff11f75e.zip,"tfb v18 queue trial: v15 + train-only CatBoost blend (experimental)",0.88234,0.87187,experiment
+submission_v17_diagnostic_onset_ab385968c0f5.zip,"tfb v17 diagnostic: v15 main with March onset from v16 (April unchanged)",0.88234,0.86612,probe
+submission_v16_37990620aa26.zip,"tfb v16 experimental: v14 T1 + causal CNN/tree T2 + L2 T4",0.86556,0.85682,experiment
+submission_20261020_2242_v15_probe.zip,"tfb v15 probe_og: v15 main with March ongoing rows at w0.75",0.88234,0.87296,probe
+submission_20261020_2242_v15_hedge.zip,"tfb v15 hedge: T1 v14 new_x2 | T2 v15 hedge (train-only + memory; April ongoing w0.75) | T4 L2-proj",0.87619,0.87492,hedge
+submission_20261020_2242_v15_main.zip,"tfb v15 main: T1 v14 new_x2 | T2 v15 main | T4 L2-proj",0.88234,0.87492,main
+submission_20261020_1913_v14_hedge.zip,"tfb v14 hedge: T1 v14 (new_x2) | T2 v13.1 hedge | T4 L2-proj",0.87557,0.87484,hedge
+submission_20261020_1913_v14_main.zip,"tfb v14 main: T1 v14 (new_x2; v10 s2 + v11 s3 refit) | T2 v13.1 main (onset nl75) | T4 L2-proj",0.88234,0.87484,main
+submission_20261014_2114_v131_hedge.zip,"tfb v13.1 hedge: T2 train-only + month memory, onset nl75 | T1 v11 | T4 L2-proj",0.87528,0.87450,hedge
+submission_20261014_2114_v131_main.zip,"tfb v13.1 main: T2 onset nl75 + v12 ongoing | T1 v11 | T4 L2-proj",0.88205,0.87450,main
+submission_20261014_1350_v13_probe_rk50.zip,"tfb v13 probe_rk50: v12 main with the onset ranker on March onset rows",0.88164,0.87396,probe
+submission_20261014_0905_v12_hedge.zip,"tfb v12 hedge: T2 train-only + month memory, onset top-m decoder | T1 v11 | T4 L2-proj",0.87592,0.87458,hedge
+submission_20261014_0905_v12_main.zip,"tfb v12 main: T2 onset top-m decoder, ongoing v2+m x3 seeds | T1 v11 | T4 L2-proj",0.88164,0.87458,main
+submission_20261013_0837_v11_hedge.zip,"tfb v11 hedge: T2 onset v2+pm / ongoing v2+m train-only + month memory | T1 v11 s3vq | T4 L2-proj",0.87573,0.87422,hedge
+submission_20261013_0837_v11_main_t1base.zip,"tfb v11 main_t1base probe: v11 main with the v10 Task 1",0.88024,0.87369,probe
+submission_20261013_0837_v11_onset_v10.zip,"tfb v11 onset_v10 probe: v11 main with the v10 March onset rows",0.88076,0.87360,probe
+submission_20261013_0837_v11_size.zip,"tfb v11 size probe: every March onset window at its top cell",0.88076,0.81183,probe
+submission_20261013_0837_v11_main.zip,"tfb v11 main: T2 onset v2+pm / ongoing v2+m | T1 v11 s3vq | T4 L2-proj",0.88076,0.87422,main
+submission_20261012_1639_v10_hedge.zip,"tfb v10 hedge: T2 v9 hedge (train only, no memory) | T1 v10 | T4 L2-proj",0.87567,0.86892,hedge
+submission_20261012_1639_v10_main.zip,"tfb v10 main: T2 month memory (onset v2+pm, ongoing v2+m) | T1 v10 B0+s2 | T4 L2-proj",0.88150,0.87306,main
+submission_20261012_1639_v10_onset_zero.zip,"tfb v10 onset_zero: v8 main with every March onset window 0",0.88481,0.76385,probe
+submission_20261011_0318_probe9mo.zip,"tfb v9 probe9mo: v8 main + March ongoing rows from v2+m",0.88481,0.87027,probe
+submission_20261011_0318_probe9m.zip,"tfb v9 probe9m: v8 main + March onset rows from v2+pm",0.88481,0.87140,probe
+submission_20261011_0227_decomp_scaled.zip,"tfb v9 decomp scaled: v8 main with Task 1 speed and flow x3",0.53743,0.52219,probe
+submission_20261011_0227_decomp_no_state.zip,"tfb v9 decomp no_state: v8 main with every Task 1 value 0",0.44680,0.43078,probe
+submission_20261011_0227_decomp_no_queue.zip,"tfb v9 decomp no_queue: v8 main with every queue_pred 0",0.63675,0.63725,probe
+submission_20261010_2236_final_hedge.zip,"tfb v8 hedge: T1 v8 blend | T2 train only | T4 L2-proj",0.87502,0.86826,hedge
+submission_20261010_2236_final.zip,"tfb v8 main: T1 v8 blend | T2 v2, April refit on train+March | T4 L2-proj",0.88481,0.86926,main
+submission_20261009_2122_final_probe7p.zip,"tfb v7 probe7p: main + March onset rows from probe5 recipe + CTM physics forecast",0.88485,0.86962,probe
+submission_20261009_2122_final_hedge.zip,"tfb v7 hedge: T1 2 sets | T2 train only, late April refit | T4 L2-proj",0.87424,0.86791,hedge
+submission_20261009_2122_final.zip,"tfb v7 main: T1 2 sets | T2 v2, April refit on train+March, late April refit | T4 L2-proj",0.88485,0.86890,main
+submission_20261009_1603_final_probe6.zip,"tfb v6 probe6: main + March onset rows from the v6 onset recipe",0.88120,0.86208,probe
+submission_20261009_1603_final_probe5.zip,"tfb v6 probe5: main + March onset rows from the v5 April onset recipe",0.88120,0.86953,probe
+submission_20261008_2236_final_hedge.zip,"tfb v5 hedge: T1 2 sets | T2 train only | T4 L2-proj",0.86918,0.86791,hedge
+submission_20261008_2236_final.zip,"tfb v5 main: T1 2 sets | T2 v2, April refit on train+March | T4 L2-proj",0.88120,0.86890,main
+submission_20261008_1422_final_hedge.zip,"tfb v4 hedge: T1 LGB+transductive+TV | T2 train only | T4 L2-proj",0.86713,0.86791,hedge
+submission_20261008_1422_final.zip,"tfb v4 main: T1 LGB+transductive+TV | T2 v2, April refit on train+March | T4 L2-proj",0.87855,0.86890,main
+submission_20261007_1359_t2probe.zip,"tfb v3 probe: v3 March rows",0.88064,0.86677,probe
+submission_20261007_1359.zip,"tfb v3: T1 LGB+transductive+TV | T2 + current-month recency, online onset adaptation | T4 L2-proj",0.88064,0.86840,main
+probe_onset_zero_20261007_0749.zip,"probe onset_zero of v2",0.77009,0.76299,probe
+probe_queue_zero_20261007_0749.zip,"probe queue_zero of v2",0.63584,0.63639,probe
+submission_20261007_0045.zip,"tfb v2: T1 LGB+transductive+TV | T2 selector LGB + March-gated April adaptation | T4 L2-proj",0.87805,0.86840,main
+submission.csv,"first submission (baseline-style)",0.85960,0.85556,main
