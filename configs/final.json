@@ -1,0 +1,53 @@
+{
+  "_comment": "Settings of the selected final submission (submission_20261025_1742_v15b_main.zip), copied from the CFG cells of the Colab notebooks that produced it (v8, v10, v11, v13, v13.1, v14, v15, v22). Do not edit: every stage report and model checkpoint is keyed on them.",
+  "T1": {
+    "rows_tag": "r1", "seeds": [0], "extra_seeds": [1, 2], "rows_per_seed": true,
+    "n_reg": 250000, "n_dark": 120000, "n_pseudo": 150000, "n_pseudo_dark": 50000, "pseudo_frac": 0.05,
+    "max_rounds": 2500, "full_refit": false, "row_jobs": 3,
+    "seed_cfg": {"2": {"n_pseudo": 300000, "n_pseudo_dark": 100000, "pseudo_dark_n": 80,
+                       "lgb_extra": {"deterministic": true, "force_row_wise": true}}},
+    "tm_holdout": true, "tm_n": 20000, "tm_z": 2.0, "hold_tol": 0.0002,
+    "cb": true, "cb_gpu": "auto", "cb_cpu": false, "cb_weights": [0.25, 0.4]
+  },
+  "LAB10": {"z": 2.0, "tol_state": 0.0005, "tol_tm": 0.0003, "boot": 400, "s2": true, "s2_rounds": 400, "s2_folds": 3,
+            "rts": true, "kfree": true},
+  "LAB11": {"z": 2.0, "tol_state": 0.0005, "tol_tm": 0.0003, "boot": 400, "s2_rounds": 400, "s2_folds": 3,
+            "s3_rounds": 400, "candidates": ["s3k", "s3vq", "s3all"]},
+  "T1_NEW": {"seed": 3, "n_pseudo": 450000, "n_pseudo_dark": 150000, "pseudo_dark_n": 120, "max_rounds": 3500,
+             "lgb_extra": {"deterministic": true, "force_row_wise": true}},
+  "T1_14": {"new_seeds": [3], "cb": "auto", "cb_weights": [0.25, 0.4], "tm_z": 2.0, "hold_tol": 0.0002, "pp_top": 4,
+            "final_tol_J": 0.0, "final_tol_tm": 0.0001, "force_blend": null},
+  "T1_NEXT": {"seed": 4, "n_pseudo": 600000, "n_pseudo_dark": 200000, "pseudo_dark_n": 160, "max_rounds": 5000,
+              "lgb_extra": {"deterministic": true, "force_row_wise": true}},
+  "T1_15": {"new_seeds": [4], "cb": "auto", "cb_weights": [0.25, 0.4], "tm_z": 2.0, "hold_tol": 0.0002, "pp_top": 4,
+            "final_tol_J": 0.0, "final_tol_tm": 0.0001, "force_blend": null, "need_next": true},
+  "T2": {
+    "seed": 0, "onset_seeds": [0, 1, 2, 3, 4, 5, 6], "ongoing_seeds": [0, 1, 2], "onset_rounds": 500, "ongoing_rounds": 700,
+    "max_ongoing_cand": 1500, "use_T": true, "pseudo": true, "pseudo_og_every": 6, "pseudo_og_per_day": 12,
+    "april_adapt": true, "adapt_alpha": 2.0, "adapt_frac": 0.5, "adapt_z": 1.5, "adapt_min_windows": 40,
+    "late_adapt": true, "late_blocks": [6], "late_conds": ["queue_onset", "queue_ongoing"], "late_alpha": 2.0,
+    "late_z": 1.5, "late_min_windows": 30, "late_seeds": [0], "late_early": {"queue_ongoing": [1, 2]},
+    "candidates": {"queue_onset": [["v2+pm", ["all", "noloc"]]],
+                   "queue_ongoing": [["v2+m", ["all", "noloc"]], ["v2+pm", ["all", "noloc"]]]},
+    "choose": true, "exp_rounds_ongoing": 300, "exp_cv_ongoing": false, "locfree": true,
+    "ead": true, "ead_gate": true, "ead_rho": null, "ead_n": 3000, "ead_M": 0, "ead_z": 2.0, "ead_zm": 2.0
+  },
+  "T2_13": {"z13": 1.0, "z13_cv": 2.0, "z13_alt": 0.5, "cv13_z": 1.0, "rank_seeds": [0], "rank_rounds": null,
+            "nl_w": 0.75, "rk_w": 0.5, "main_check": true, "min_windows13": 40, "fam_share13": 0.75,
+            "reload_tol": 0.02, "force13": null, "rule13": "cross_draw", "z13x": 2.0, "probe13": false},
+  "T2_15": {"og_w": 0.75, "on_w": 1.0, "z15": 2.0, "min_windows15": 40, "fam_share15": 0.75, "reload_tol": 0.02,
+            "main_check": true, "onset_step": true, "probe": true, "march_compliant": true, "force15": null},
+  "ASOF": {"per_split": 2, "seed": 22},
+  "FINAL": {
+    "task1_file": "task1_v15.parquet",
+    "task2_file": "task2_v15_0.csv",
+    "task4_file": "task4.csv",
+    "selected_zip": "submission_20261025_1742_v15b_main.zip",
+    "selected_csv_md5": "6d196f7870a9e58d13edb4c183cef020",
+    "components_md5": {"task1_v15.parquet": "c0327df4e41373dd733c70ae64cb6de9",
+                       "task2_v15_0.csv": "9be1bef82420ac144af4020832e3420b",
+                       "task4.csv": "d514ac203fa8489c6d4956dd77ec0e20"},
+    "private_score": 0.88253,
+    "public_score": 0.87514
+  }
+}
